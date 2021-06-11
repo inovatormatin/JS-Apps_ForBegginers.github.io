@@ -8,6 +8,7 @@ const button = document.getElementById('submit'); // Submit button
 const total = document.getElementById('total');
 var totalAmount = 0;
 const addAmountInTotal = (value) => {
+	total.style.visibility = 'visible';
 	totalAmount = +totalAmount + +value;
 	total.innerHTML = `Toatal : ${totalAmount}`;
 }
@@ -20,7 +21,7 @@ const cleanInput = () => {
 // for deleting
 const deleteIt = (event) => {
 	totalAmount = +totalAmount - +event.target.parentNode.childNodes[2].textContent;
-	total.innerHTML = `Toatal : ${totalAmount}`;
+	total.innerHTML = `Total : ${totalAmount}`;
 	event.target.parentNode.remove();
 }
 // function for adding new expense
@@ -49,4 +50,4 @@ const addExpense = () => {
 		alert('Please provide all information.')
 	}
 }
-button.addEventListener('click', addExpense); // event listener for submit button
+button.addEventListener('click', addExpense); // event listener for submit button 

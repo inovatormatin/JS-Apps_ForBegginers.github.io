@@ -2,22 +2,30 @@
 <html>
 <head>
 	<title>Expense Tracker</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+	<header>
+		<h1 class="animate__animated animate__fadeInDown">Expense Tracker</h1>
+	</header>
 	<div class="container">
 		<input id="expenseName" type="text" placeholder="Expense Title" required>
 		<input id="date" type="date" required>
 		<input id="expenseAmount" type="number" placeholder="Enter the amount" required>
 		<button id="submit">Add it</button>
 	</div>
-	<table>
-		<tr class="tableTitle">
-			<th>Expense</th>
-			<th>Date</th>
-			<th>Amount</th>
-		</tr>
-	</table>
-	<h3 id="total"></h3>
+	<div class="expTable">
+		<h2>Your Expense till now.</h2>
+		<table>
+			<tr id="tableTitle">
+				<th>Expense</th>
+				<th>Date</th>
+				<th>Amount</th> 
+			</tr>
+		</table>
+		<h3 id="total"></h3>
+	</div>
 </body>
 <script src="./script.js"></script>
 </html>
