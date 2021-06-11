@@ -1,0 +1,27 @@
+#imageSection{
+	background-color: grey;
+	padding: 10px;
+	border-radius: 10px;
+}
+img{
+	background-color: darkgrey;
+    border-width: 2px;
+	border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    opacity: 0%;
+}
+ul{
+	display: flex;
+	list-style-type: none;
+}
+li{
+	border-style: dashed;
+	border-width: 2px;
+	border-radius: 10px;
+	width: 200px;
+	height: 200px;
+}
+#game {
+	display: none;
+}
