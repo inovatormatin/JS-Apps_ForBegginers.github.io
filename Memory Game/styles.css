@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,600;1,400&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*basic structure*/
+
 #imageSection{
 	background-color: grey;
 	padding: 10px;
 	border-radius: 10px;
+	margin-top: 2vh;
 }
-img{
+li img{
 	background-color: darkgrey;
     border-width: 2px;
 	border-radius: 10px;
@@ -16,12 +25,66 @@ ul{
 	list-style-type: none;
 }
 li{
-	border-style: dashed;
 	border-width: 2px;
 	border-radius: 10px;
 	width: 200px;
 	height: 200px;
+	background-color: #2d3748;
+	margin:5px;
 }
 #game {
+	display: none;
+}
+/*Styling*/
+body{
+	background-color: #00bcd470;
+	padding: 0 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+header h1 {
+	font-family: 'Pacifico', cursive;
+	font-weight: 400;
+	font-size: 4em;	
+	color: #59565f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header p {
+	font-family: 'Pacifico', cursive;
+	font-weight: 400;
+	font-size: 1.8em;	
+	color: #59565f;
+	text-align: center;
+	margin-top: 5vh;
+}
+header img{
+	width:24vh;
+	margin-right: 4vh;
+	border-radius: 1.3vh;
+}
+#start, #shuffleButton{
+	margin-top: 5vh;
+	padding: 2vh 3vh;
+	border: none;
+	outline: none;
+	border-radius: 2vh;
+	color: white;
+	background-color: #2d3748;
+	font-family: 'Prompt', cursive;
+	font-weight: 200;
+	font-size: 0.9em;
+	width: 15%;
+}
+#result{
+	color: white;
+	background-color: white;
+	margin: 5vh 0vh 1vh 0vh;
+	border-radius: 3vh;
+	padding: 3vh;
 	display: none;
 }

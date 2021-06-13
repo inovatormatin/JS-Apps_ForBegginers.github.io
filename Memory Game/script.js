@@ -12,8 +12,16 @@ const countClick = () => {
 }
 ul.addEventListener('click', countClick);
 const match = () => {
-	if(temp === image1){ result.innerText = 'wow ! You win. Press shuffle to replay.'}
-	if(temp !== image1){ result.innerText = 'oops ! You lose. Press shuffle to replay.'}
+	if(temp === image1){ 
+		result.innerText = 'wow ! You win. Press shuffle to replay.';
+		result.style.display = 'block';
+		result.style.backgroundColor = '#79793fbf';
+	}
+	if(temp !== image1){ 
+		result.innerText = 'oops ! You lose. Press shuffle to replay.';
+		result.style.display = 'block';
+		result.style.backgroundColor = 'red';
+	}
 }
 var arr = [
 	'https://robohash.org/1',
@@ -33,6 +41,7 @@ const shuffle = (array) => {
 	return array;
 }
 const shuffleImage = () => {
+	result.style.display = 'none';
 	shuffle(arr);
 	for(var i = 0; arr.length > 0; i++){
 		var img = `img${i}`;

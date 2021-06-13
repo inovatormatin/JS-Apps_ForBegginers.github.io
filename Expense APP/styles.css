@@ -66,6 +66,7 @@ table{
 	background-color: #070708cc;
 }
 .expTable h2{
+	font-weight: 300;
 	padding: 3vh 0;
 }
 #tableTitle th{
