@@ -7,18 +7,23 @@ const deleteNode = (event) => event.target.parentNode.remove();
 const createElement = () => {
 	// creating new node
 	var li =  document.createElement('li');
-	li.appendChild(document.createTextNode(input.value));
+	var p =  document.createElement('p');
+	p.setAttribute('id','taskName');
+	p.appendChild(document.createTextNode(input.value));
+	li.appendChild(p);
 	ul.appendChild(li);
 	input.value = '';
 	// adding done Button
 	var button =  document.createElement('button');
 	button.appendChild(document.createTextNode('Done'));
+	button.setAttribute('id','doneBtn');
 	li.appendChild(button);
-	const doneNode = () => li.style = "text-decoration: line-through";
+	const doneNode = () => p.style = "text-decoration: line-through";
 	button.onclick = doneNode;
 	// adding delete Button
 	var button =  document.createElement('button');
 	button.appendChild(document.createTextNode('Delete'));
+	button.setAttribute('id','deleteBtn');
 	li.appendChild(button);
 	button.onclick = deleteNode;
 }
