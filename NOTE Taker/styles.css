@@ -33,8 +33,15 @@ ul {
 }
 .liItem{
 	width : 18rem;
-	height : 10.5rem;
+	height : 11.5rem;
+    padding: 3vh 5vh;
+    border-radius: 2vh;
 	overflow : hidden;
 	margin-top : 3vh;
 	cursor : pointer;
+	background-color: #eeeeee;
+	transition: 0.5s;
+}
+.liItem:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

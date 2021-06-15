@@ -10,7 +10,6 @@ const popUp = (event) => {
 const hideUp = (event) => {
 	event.target.parentNode.style.width = '18rem';
 	event.target.parentNode.style.overflow = 'hidden';
-	console.log(event.target.parentNode);
 }
 const addNote = () => {
 	var li =  document.createElement('li');
@@ -25,11 +24,11 @@ const addNote = () => {
 	button.onclick = deleteNote;
 	var button = document.createElement('button');
 	button.appendChild(document.createTextNode('Close'));
-	button.setAttribute('class','btn btn-success btn-sm m-left-3');
+	button.setAttribute('class','btn btn-success btn-sm ms-2');
 	li.appendChild(button);
 	button.onclick = hideUp;
+	li.childNodes[0].onclick = popUp;
 	ul.appendChild(li);
-	ul.onclick = popUp;
 	input.value = '';
 }
 const onKeyPress = (event) => {
