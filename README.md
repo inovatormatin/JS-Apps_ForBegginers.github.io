@@ -1,2 +1,11 @@
 # JS-Apps_ForBegginers.github.io
 In this repository I created 5 begginer level javaScript App.
+<p>Expense noter</p>
+<img src="![expenseTracker](https://user-images.githubusercontent.com/72307107/122110037-b3363a80-ce3b-11eb-9802-b3a6b14864f5.png)">
+<p>Flip It Game</p>
+![flipit](https://user-images.githubusercontent.com/72307107/122110257-f42e4f00-ce3b-11eb-8194-cf4b1e38aa63.png)
+<p>To Do list</p>
+![todo](https://user-images.githubusercontent.com/72307107/122110307-027c6b00-ce3c-11eb-802e-5f182b891237.png)
+<p>Note Maker</p>
+![noteWritter](https://user-images.githubusercontent.com/72307107/122110352-1031f080-ce3c-11eb-88a5-4db1ec1fd096.png)
+<p>Vowel Counter</p>
