@@ -2,15 +2,23 @@
 <html>
 <head>
 	<title>Note Writter</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
 	<div>
-		<h1>Note Writter</h1>
-		<p>Write some notes</p>
-		<textarea type="text" id="input" placeholder="Write something good !"></textarea>
-		<button id="addNoteButton">Enter</button>
+		<header>
+			<img id="headerImage" src="https://i.pinimg.com/originals/78/0e/82/780e82a59775c95c72df27c9d8e1bb74.gif">
+			<h1>Note Writter</h1>
+		</header>
+		<div class="getting-note">
+			<textarea class="form-control" type="text" id="input" placeholder="Write something good !"></textarea>
+			<button id="addNoteButton" class="btn btn-primary my-3">Enter</button>
+		</div>
 	</div>
-	<ul></ul>
+	<ul class="container"></ul>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
 </html>
+
