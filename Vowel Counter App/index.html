@@ -2,14 +2,41 @@
 <html>
 <head>
 	<title>Vowel Counter</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-	<div>
-		<h1>Vowel Counter</h1>
-		<p>Write your content here, and site will tell you total no. of vowels it contain</p>
-		<textarea type="text" id="userInput" placeholder="write something here !"></textarea>
+	<section class="container centered py-5">
+		<div>
+			<h1>Vowel Counter</h1>
+			<p class="lead">Write your content here, and site will tell you total no. of vowels it contain</p>
+			<div class="form-floating">
+			  <textarea class="form-control" id="floatingTextarea" type="text" placeholder="write something here !"></textarea>
+			  <label for="floatingTextarea">write here</label>
+			</div>
+		</div>
+			<!-- Button trigger modal -->
+		<button id="submitButton" type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+		  Enter
+		</button>
+	</section>
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="staticBackdropLabel">Result</h5>
+	      </div>
+	      <div id="result" class="modal-body">
+	        <!-- result come from js -->
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
-	<button id="submitButton">Enter</button>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
 </html>

@@ -1,9 +1,10 @@
-const userInput = document.getElementById('userInput');
+const userInput = document.getElementById('floatingTextarea');
 const button = document.getElementById('submitButton');
+const result = document.getElementById('result');
 // calculate String length
 const inputLength = () => userInput.value.length;
 // count total no. of vowels
-let vowels = [`a`,`e`,`i`,`o`,`u`];
+let vowels = [`a`,`e`,`i`,`o`,`u`,`A`,`E`,`I`,`O`,`U`];
 const countVowels = () => {
 	var x = 0;
 	for(var i = 0; i < inputLength(); i++) {
@@ -17,12 +18,19 @@ const countVowels = () => {
 // give output
 const onClick = () => {
 	if(inputLength() > 0) {
-		alert(countVowels());
+		result.innerText = `There are ${countVowels()} vowel in your content.`;
+	}
+	else{
+		result.innerText = `Please write something.`;
 	}
 }
 const onKeyPress = (value) => {
 	if(inputLength() > 0 && value.keyCode === 13) {
-		alert(countVowels());
+		button.click();
+		() => {result.innerText = `There are ${countVowels()} vowel in your content.`;}		
+	}
+	else{
+		result.innerText = `Please write something.`;
 	}
 }
 button.addEventListener('click',onClick);
