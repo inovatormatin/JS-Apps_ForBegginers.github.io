@@ -22,10 +22,13 @@ body{
 .container h1{
 	padding: 5vh 0;
 	font-size: 5em;
+	color: white;
+	text-shadow: 3px 4px 6px black;
 }
 .tagline{
 	padding: 2vh 0;
 	font-size: 1.5em;	
+	color: white;
 }
 .container p{
 	padding: 2vh 0;
